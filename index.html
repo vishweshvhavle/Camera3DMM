@@ -86,7 +86,7 @@
 <section class="hero teaser">
   <div class="container is-max-desktop">
     <div class="hero-body">
-      <img src="./static/images/teaser.jpg" alt="Camera3DMM Teaser" style="width: 100%; border-radius: 10px;">
+      <img src="./static/images/teaser.png" alt="Camera3DMM Teaser" style="width: 100%; border-radius: 10px;">
       <h2 class="subtitle has-text-centered" style="margin-top: 20px;">
         <span class="camera3dmm-text">Camera3DMM</span> enables 3D reconstruction of human heads under perspective distortions. 
         We visualize selfie image samples from the NoW dataset on top, and our FLAME fitting results on bottom.
@@ -131,7 +131,7 @@
   <div class="container is-max-desktop">
     <h2 class="title is-3 has-text-centered">Method Overview</h2>
     <div class="content has-text-justified">
-      <img src="./static/images/method.jpg" alt="Method Overview" style="width: 100%; margin-bottom: 20px; border-radius: 10px;">
+      <img src="./static/images/Camera3DMM.png" alt="Method Overview" style="width: 100%; margin-bottom: 20px; border-radius: 10px;">
       <p>
         Our framework consists of two main phases: (1) <strong>Data Generation</strong> where we render images with varying 
         camera parameters from NPHM scans, and (2) <strong>Network Training</strong> where we train separate encoders for 
@@ -150,24 +150,10 @@
     <div class="columns is-centered">
       <div class="column">
         <div class="content">
-          <h3 class="title is-4">Qualitative Comparisons</h3>
-          <img src="./static/images/qualitative.jpg" alt="Qualitative Results" style="width: 100%; border-radius: 10px;">
+          <img src="./static/images/qual_eval_full.jpg" alt="Qualitative Results" style="width: 100%; border-radius: 10px;">
           <p class="has-text-justified" style="margin-top: 15px;">
             FLAME meshes predicted by DECA, EMOCAv2, SMIRK, and <span class="camera3dmm-text">Camera3DMM</span> (Ours) 
             against ground truth. Our method exhibits more accurate facial alignment across different focal lengths.
-          </p>
-        </div>
-      </div>
-    </div>
-
-    <div class="columns is-centered" style="margin-top: 40px;">
-      <div class="column">
-        <div class="content">
-          <h3 class="title is-4">Quantitative Results</h3>
-          <img src="./static/images/quantitative.jpg" alt="Quantitative Results" style="width: 100%; border-radius: 10px;">
-          <p class="has-text-justified" style="margin-top: 15px;">
-            Vertex error across focal length values. <span class="camera3dmm-text">Camera3DMM</span> shows the most 
-            pronounced improvements at shorter focal lengths where perspective distortions are strongest.
           </p>
         </div>
       </div>
