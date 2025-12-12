@@ -60,6 +60,13 @@
                   <span>Paper</span>
                 </a>
               </span>
+  
+              <span class="link-block">
+                <a href="./static/paper/Supplementary-Camera3DMM.pdf" class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon"><i class="fas fa-file-pdf"></i></span>
+                  <span>Supplementary Material</span>
+                </a>
+              </span>
             </div>
           </div>
         </div>
@@ -144,7 +151,21 @@
         </div>
       </div>
     </div>
-  </div>
+
+    <div class="columns is-centered" style="margin-bottom: 40px;">
+        <div class="column">
+          <div class="content">
+            <video id="results-video-2" autoplay muted loop playsinline style="width: 100%; border-radius: 10px;">
+              <source src="./static/videos/qual_eval.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+            <p class="has-text-justified" style="margin-top: 15px;">
+              Qualitative Comparisons along with corresponding Vertex error of FLAME meshes predicted by DECA, EMOCAv2,
+              SMIRK, and <span class="camera3dmm-text">Camera3DMM</span> (Ours) against ground truth.
+            </p>
+          </div>
+        </div>
+    </div>
 </section>
 
 <!-- BibTeX -->
